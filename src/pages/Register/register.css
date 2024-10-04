@@ -1,0 +1,98 @@
+:root{
+    --buttons: #4492F6;
+    --off: #868686;
+
+}
+
+html{
+    background-image: url(imgs/Main_bg.png);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+    width: 100dvw;
+    height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 362px;
+    height: 492px;
+
+    background-color: rgba(255, 255, 255, 0.72);
+    border-radius: 20px;
+    filter: drop-shadow(23px 22px 17.9px rgba(255, 255, 255, 0.15));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.focim{
+    width: 230px;
+    height: 110px;
+
+    color: black;
+    text-align: center;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.96px;
+}
+
+input{
+    width: 261px;
+    height: 30px;
+
+    border: none;
+    background-color: var(--off);
+    border-radius: 10px;
+
+    color: #000;
+
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.72px;
+}
+
+.inputs{
+    display: grid;
+    gap: 30px;
+}
+
+button{
+    width: 320px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.4);
+
+    background-color: var(--buttons);
+    transition-duration: 0.4s;
+    
+    margin-top: 42px;
+
+}
+
+button:hover, button:focus{
+    background-color: rgb(95, 95, 160);
+}
