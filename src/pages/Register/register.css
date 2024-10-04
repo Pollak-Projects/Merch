@@ -25,9 +25,9 @@ body{
     width: 362px;
     height: 492px;
 
-    background-color: rgba(255, 255, 255, 0.72);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
-    filter: drop-shadow(23px 22px 17.9px rgba(255, 255, 255, 0.15));
+    filter: drop-shadow(23px 22px 17.9px rgba(255, 255, 255, 0.2));
 
     display: flex;
     justify-content: center;
@@ -50,21 +50,18 @@ form{
     text-align: center;
     font-family: Inter;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 120%;
     letter-spacing: -0.96px;
+    margin-bottom: 0;
 }
 
 input{
     width: 261px;
     height: 30px;
 
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
     background-color: var(--off);
     border-radius: 10px;
-
-    color: #000;
 
     font-family: Inter;
     font-size: 24px;
@@ -72,6 +69,17 @@ input{
     font-weight: 700;
     line-height: 120%;
     letter-spacing: -0.72px;
+
+    transition-duration: 0.4s;
+}
+
+input:hover, input:focus{
+    background: #b6b6b6;
+}
+
+input::placeholder{
+    color: rgb(0, 0, 0, 0.55);
+    
 }
 
 .inputs{
@@ -93,6 +101,42 @@ button{
 
 }
 
-button:hover, button:focus{
-    background-color: rgb(95, 95, 160);
+button:hover, button:focus, .login_link:hover, .login_link:focus{
+    background-color: #73a4ff;
+}
+
+.regist_button{
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.96px;
+}
+
+.login_option{
+    text-align: center;
+    color: black;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.login_link{
+    text-decoration: none;
+    color: black;
+    background-color: var(--buttons);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: 1.5px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition-duration: 0.4s;
 }
