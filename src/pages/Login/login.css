@@ -1,0 +1,15 @@
+:root{
+    --btn: #4492F6;
+    --input: #A6A6A6;
+}
+
+.container{
+    align-items: center;
+
+}
+
+.card{
+    width: 362px;
+    height: 492px;
+    flex-shrink: 0;
+}
