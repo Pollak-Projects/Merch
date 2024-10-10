@@ -54,30 +54,33 @@
     
 
 
-   
-      <div class="flex-1 flex justify-center items-center object-center	
-       h-screen" style="
-       margin-left: 150px;
-   ">
-          <div class="bg-blue-100 rounded-lg shadow-lg p-6 flex space-x-8 w-[989px] h-[452px]">
-           
-              <div class="w-1/2 h-full bg-gray-300 rounded-lg">
-                  <img src="https://placehold.co/400x400" alt="Felhasználó profilképe" class="w-full h-full object-cover rounded-lg">
-              </div>
 
-            
-              <div class="flex flex-col justify-center space-y-6 p-36">
-                  <p class="text-black text-lg">Felhasználó neve</p>
-                  <p class="text-black text-lg">Felhasználó email</p>
-                  <p class="text-black text-lg">Felhasználó tel.</p>
+    <div class="container">
+        <!-- Top bar with filters and add button -->
+        <div class="top-bar">
+            <input type="text" placeholder="Termék id" disabled>
+            <input type="text" placeholder="Termék név" disabled>
+            <input type="text" placeholder="Termék ára" disabled>
+            <input type="text" placeholder="Termék leírása" disabled>
+            <button class="add-button">Hozzáadás</button>
+        </div>
 
-                  <button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-4 hover:bg-blue-600">
-                      Szerkesztés
-                  </button>
-              </div>
-          </div>
-      </div>
-  </div>
+        <!-- Product Card -->
+        <div class="product-card">
+            <div class="product-info">
+                <div class="product-image"></div>
+                <div class="product-details">
+                    <span class="product-name">Termék neve</span>
+                    <span class="product-price">Termék ára</span>
+                    <span class="product-stock">Készlet</span>
+                </div>
+            </div>
+            <button class="edit-button">Szerkesztés</button>
+        </div>
+    </div>
+  
+    
+  
 
     </main>
 </body>
