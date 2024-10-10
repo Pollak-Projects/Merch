@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
     margin: 0;
@@ -8,21 +8,41 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-size: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 nav{
-    padding:2.5vh 6vh;
+    padding: 2.5vh 6vh;
     background-color: #030A1B;
+    width: 100%;
 }
 .shopping-cart
 {
     padding:0vh;
 }
-footer{
+footer {
     position: fixed;
     bottom: 0;
-    padding:0.2vh 6vh;
-    width: 100%;
+    padding: 0.2vh 6vh;
+    width: 100vw; /* Set to viewport width */
     background-color: #030A1B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+footer p {
+    color: #ADF4FF;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+footer .icons {
+    display: flex;
+    gap: 15px; /* space between icons */
 }
 svg {
     cursor: pointer;
