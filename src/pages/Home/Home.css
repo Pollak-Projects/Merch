@@ -8,7 +8,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-size: 100%;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden; 
+    height: 100dvh;
+    backdrop-filter: blur(4px);
 }
 nav{
     padding: 2.5vh 6vh;
@@ -23,12 +25,12 @@ footer {
     position: fixed;
     bottom: 0;
     padding: 0.2vh 6vh;
-    width: 100vw; /* Set to viewport width */
+    width: 100vw;
     background-color: #030A1B;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box; 
 }
 
 footer p {
@@ -42,7 +44,7 @@ footer p {
 
 footer .icons {
     display: flex;
-    gap: 15px; /* space between icons */
+    gap: 15px; 
 }
 svg {
     cursor: pointer;
