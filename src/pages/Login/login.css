@@ -1,9 +1,12 @@
 :root{
     --btn: #4492F6;
-    --input: #A6A6A6;
+    --input: #868686;
     --text_color: #F2F2F2;
+    --off: #dddcdc;
 }
-
+html{
+      background-image: url("imgs/bg.png"); 
+}
 .container{
     display: flex;
     justify-content: center;
@@ -27,10 +30,12 @@
 }
 
 body {
-    background-image: url("imgs/bg.png");
+ 
     backdrop-filter: blur(4px);
     height: 100dvh;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .input{
@@ -48,6 +53,8 @@ body {
     line-height: 120%;
     letter-spacing: -0.72px;
     border: none;
+    transition-duration: 0.4s;
+
 }
 
 button{
@@ -72,7 +79,14 @@ button{
 }
 
 button:hover, button:focus{
-    background-color: rgb(130, 130, 218);
+    background-color: #a592eb;
+}
+#regisztracio:hover,  #regisztracio:focus{
+
+    color: #a592eb;
+}
+input:hover, input:focus{
+    background-color: var(--off);
 }
 
 p, a, a:visited{
@@ -84,6 +98,10 @@ p, a, a:visited{
     font-weight: 700;
     line-height: 120%;
     letter-spacing: -0.6px;
+}
+p{
+    margin-bottom: 40px;
+    margin-top: 0;    
 }
 
 h1{
@@ -99,6 +117,13 @@ h1{
 .switches{
     display: none;
 }
+::placeholder{
+    color: var(--text_color);
+}
+input:hover::placeholder,  input:focus::placeholder{
+    color: var(--input);
+}
+
 
 @media (max-width: 600px) {
     body{
@@ -167,6 +192,9 @@ h1{
         letter-spacing: -0.96px;
         text-decoration: none;
         font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .login_switch{
         z-index: 1;
