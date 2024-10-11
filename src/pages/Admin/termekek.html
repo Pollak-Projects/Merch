@@ -35,11 +35,7 @@
 </div>
 <div class="absolute px-6 navbar-bottom"
 >
-<div class="relative py-2 sm:max-w-xl sm:mx-auto">
-  <a href="./beallitasok.html" class="font-display max-w-sm text-xl  leading-tight">
-      <span class="link link-underline link-underline-black text-black"> Beállítások </span>
-  </a>
-</div>
+
 <div class="relative py-2  sm:max-w-xl sm:mx-auto">
   <a href="../../index.html" class="font-display max-w-sm text-xl  leading-tight">
       <span class="link link-underline link-underline-black text-red-600	 "> Kijelentkezés </span>
@@ -57,20 +53,22 @@
 
     <div class="container fixed ml-[5%] w-[5000px] h-[900px] mt-[1%]" >
         <div class="top-bar">
-            <input type="text" placeholder="Termék id" >
-            <input type="text" placeholder="Termék név" >
-            <input type="text" placeholder="Termék ára" >
-            <input type="text" placeholder="Termék leírása" >
+            <input class="text-center" type="text" placeholder="Termék id" >
+            <input class="text-center" type="text" placeholder="Termék név" >
+            <input class="text-center" type="text" placeholder="Termék ára" >
+            <input class="text-center" type="text" placeholder="Termék leírása" >
             <button class="add-button">Hozzáadás</button>
         </div>
+        
+
 
         <div class="product-card">
             <div class="product-info">
                 <div class="product-image"></div>
-                <div class="product-details">
-                    <span class="product-name">Termék neve</span>
-                    <span class="product-price">Termék ára</span>
-                    <span class="product-stock">Készlet</span>
+                <div class="justify-center flex">
+                    <span class="product-name w-[220px] mx-[100px] text-xl">Termék neve</span>
+                    <span class="product-price w-[220px] mx-[100px] text-xl">Termék ára</span>
+                    <span class="product-stock w-[220px] mx-[100px] text-xl">Készlet</span>
                 </div>
             </div>
             <button class="edit-button">Szerkesztés</button>
