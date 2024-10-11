@@ -1,12 +1,19 @@
 html {
     background-image: url(images/bg.png);
 }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+
 body {
     background-repeat: no-repeat;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-size: 100%;
@@ -25,7 +32,6 @@ nav{
 {
 
 }
-
 
 .shopping-cart
 {
@@ -75,27 +81,70 @@ main {
     align-items: center;
 }
 
-/* Start Cloumn 1 */
+/* Start Cloumn 1 (Robi)*/
 
-.column-1 {
+.column-1, .shirt, .arrow_button{
     display: flex;
+    align-items: center;
     align-content: center;
-    justify-items: center;
     justify-content: center;
+}
+
+.column-1{
     background-color: rgba(251, 134, 134, 0.20);
     width: 50%; height: 100%;
 }
 
-.merch {
-    height: 80%;
-    border-radius: 20px;
+/* Shirt and Color things */
+
+.shirt{
+    width: 100dvh;
+    max-width: 100%;
+    position: relative;
 }
 
-.everything{
-    display: flex;
-    align-items: center;
-    filter: drop-shadow(4px 4px 6px black);
+.merch{
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+
+    filter: drop-shadow(4px 4px 6px White);
 }
+
+.colors{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    position: absolute;
+    top: 10px;
+    left: 11%;
+}
+
+.color{
+    padding: 15px;
+    border-radius: 50%;
+    border: 4px solid #72c2ce;
+    cursor: pointer;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.black{
+    background-color: black;
+}
+
+/* Slideshow */
 
 .arrow_img{
     height: 20px;
@@ -103,12 +152,11 @@ main {
 }
 
 .arrow_button{
+    height: 5%;
+
     border-radius: 20px;
     padding: 8px;
     margin: 0;
-    display: flex;
-    align-content: center;
-    justify-items: center;
 
     border: none;
     filter: drop-shadow(none);
@@ -120,12 +168,16 @@ main {
 
 /* End Cloumn 1 */
 
+/* Start Cloumn 2 (Sanyi)*/
+
 .column-2 {
     background-color: blue;
     width: 25%; height: 100%;
 }
 
-/*Column 3 Contents*/
+/* End Cloumn 1 */
+
+/*Column 3 Contents (Kitti)*/
 
 .column-3 {
     background-color: wheat;
