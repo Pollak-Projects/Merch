@@ -15,11 +15,19 @@ body {
     backdrop-filter: blur(4px);
     
 }
+
+/* Navbar */
 nav{
     padding: 2.5vh 6vh;
     background-color: #030A1B;
     width: 100%;
 }
+.nav-right
+{
+
+}
+
+
 .shopping-cart
 {
     padding:0vh;
