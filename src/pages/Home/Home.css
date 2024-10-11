@@ -13,7 +13,6 @@ body {
     overflow-x: hidden; 
     height: 100dvh;
     backdrop-filter: blur(4px);
-    
 }
 
 /* Navbar */
@@ -95,7 +94,7 @@ main {
 .everything{
     display: flex;
     align-items: center;
-    filter: drop-shadow(4px 4px black);
+    filter: drop-shadow(4px 4px 6px black);
 }
 
 .arrow_img{
@@ -110,6 +109,13 @@ main {
     display: flex;
     align-content: center;
     justify-items: center;
+
+    border: none;
+    filter: drop-shadow(none);
+}
+
+.left_arrow{
+    rotate: 180deg;
 }
 
 /* End Cloumn 1 */
