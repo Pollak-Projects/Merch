@@ -83,63 +83,6 @@ main {
     width: 25%; height: 100%;
 }
 
-/*Column 3 Contents*/
-
-.column-3 {
-    background-color: wheat;
-    width: 25%; height: 100%;
-    display: flex;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-}
-
-.szallitas
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    justify-items: center;
-    background-color: azure;
-    width: 85%; height: 40%;
-    padding-top:1vh;
-    margin-top:2vh;
-    font-size: 2.5vh;
-    border-radius: 5%;
-}
-.szallitas-header {
-    font-size: 4vh;
-    margin:0;
-}
-
-.szallitas p {
-    margin:0.5vh;
-}
-
-.arrow-down {
-    width: 0; 
-    height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    
-    border-top: 20px solid black;
-  }
-
-.in-line-svg svg{
-    cursor: default;
-}
-
-/*
-.szallitas-info
-{
-    background-color:  #ADF4FF;
-    width: 85%; height: 10%;
-}
-*/
-
-/* --- */
-
 .merch {
     height: 80%;
     border-radius: 20px;
@@ -151,6 +94,80 @@ main {
 }
 
 /* End Cloumn 1 */
+
+/* Start Column 3 */
+
+.column-3 {
+    background-color: wheat;
+    width: 25%; height: 100%;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+/* White Card */
+.szallitas
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    justify-items: center;
+    background-color: azure;
+    width: 85%;
+    padding-top:1.5vh;
+    padding-bottom:1.5vh;
+    margin-top:8vh;
+    font-size: 2.5vh;
+    border-radius: 15px;
+}
+
+.szallitas-header {
+    font-size: 4vh;
+    margin:0;
+}
+
+.szallitas p {
+    margin: 0.5vh;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    
+    border-top: 5px solid black;
+  }
+
+/* SVG car and text */
+.in-line-svg{
+    display: flex;
+    margin-top:5vh;
+    gap: 1.5vh;
+}
+.in-line-svg svg{
+    cursor: default;
+}
+
+/* Blue Card */
+.szallitas-info
+{
+    background-color:  #ADF4FF;
+    width: 85%;
+    border-radius: 20px;
+    font-size: 2.5vh;
+    text-align: center;
+}
+.szallitas-info p {
+    margin:0.5vh;
+}
+
+
+/* End Column 3 */
 
 .column-2 {
     background-color: rgba(106, 163, 238, 0.20);
