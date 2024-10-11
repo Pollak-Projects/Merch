@@ -26,6 +26,7 @@ body{
     width: 100dvw;
     height: 100dvh;
     
+    backdrop-filter: blur(4px);    
 }
 
 .card{
@@ -106,7 +107,7 @@ button{
 }
 
 button:hover, button:focus, .login_link:hover, .login_link:focus{
-    background-color: #73a4ff;
+    background-color: #a592eb;
 }
 
 .regist_button{
