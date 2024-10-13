@@ -14,16 +14,15 @@
                     <path d="M18 44V24H30V44M6 18L24 4L42 18V40C42 41.0609 41.5786 42.0783 40.8284 42.8284C40.0783 43.5786 39.0609 44 38 44H10C8.93913 44 7.92172 43.5786 7.17157 42.8284C6.42143 42.0783 6 41.0609 6 40V18Z" stroke="#ADF4FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </a>    
-
             <div class="nav-right">
                 <a href="../Checkout/Checkout.html">
-                    <svg class="shopping-cart" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                         <path d="M6 12L12 4H36L42 12M6 12V40C6 41.0609 6.42143 42.0783 7.17157 42.8284C7.92172 43.5786 8.93913 44 10 44H38C39.0609 44 40.0783 43.5786 40.8284 42.8284C41.5786 42.0783 42 41.0609 42 40V12M6 12H42M32 20C32 22.1217 31.1571 24.1566 29.6569 25.6569C28.1566 27.1571 26.1217 28 24 28C21.8783 28 19.8434 27.1571 18.3431 25.6569C16.8429 24.1566 16 22.1217 16 20" stroke="#ADF4FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                
                 <a href="../Login/login.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="58" height="56" viewBox="0 0 58 56" fill="none">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                         <path d="M29.0003 27.9999C26.342 27.9999 24.0663 27.086 22.1732 25.2583C20.2802 23.4305 19.3337 21.2333 19.3337 18.6666C19.3337 16.0999 20.2802 13.9027 22.1732 12.0749C24.0663 10.2471 26.342 9.33325 29.0003 9.33325C31.6587 9.33325 33.9344 10.2471 35.8274 12.0749C37.7205 13.9027 38.667 16.0999 38.667 18.6666C38.667 21.2333 37.7205 23.4305 35.8274 25.2583C33.9344 27.086 31.6587 27.9999 29.0003 27.9999ZM9.66699 46.6666V40.1333C9.66699 38.811 10.0194 37.5958 10.7243 36.4874C11.4291 35.3791 12.3656 34.5333 13.5337 33.9499C16.0309 32.7444 18.5684 31.8402 21.1462 31.2374C23.7239 30.6346 26.342 30.3333 29.0003 30.3333C31.6587 30.3333 34.2767 30.6346 36.8545 31.2374C39.4323 31.8402 41.9698 32.7444 44.467 33.9499C45.635 34.5333 46.5715 35.3791 47.2764 36.4874C47.9812 37.5958 48.3337 38.811 48.3337 40.1333V46.6666H9.66699ZM14.5003 41.9999H43.5003V40.1333C43.5003 39.7055 43.3896 39.3166 43.168 38.9666C42.9465 38.6166 42.6545 38.3444 42.292 38.1499C40.117 37.0999 37.9219 36.3124 35.7066 35.7874C33.4913 35.2624 31.2559 34.9999 29.0003 34.9999C26.7448 34.9999 24.5094 35.2624 22.2941 35.7874C20.0788 36.3124 17.8837 37.0999 15.7087 38.1499C15.3462 38.3444 15.0541 38.6166 14.8326 38.9666C14.6111 39.3166 14.5003 39.7055 14.5003 40.1333V41.9999ZM29.0003 23.3333C30.3295 23.3333 31.4673 22.8763 32.4139 21.9624C33.3604 21.0485 33.8337 19.9499 33.8337 18.6666C33.8337 17.3833 33.3604 16.2846 32.4139 15.3708C31.4673 14.4569 30.3295 13.9999 29.0003 13.9999C27.6712 13.9999 26.5333 14.4569 25.5868 15.3708C24.6403 16.2846 24.167 17.3833 24.167 18.6666C24.167 19.9499 24.6403 21.0485 25.5868 21.9624C26.5333 22.8763 27.6712 23.3333 29.0003 23.3333Z" fill="#ADF4FF"/>
                     </svg>
                 </a>
@@ -36,11 +35,28 @@
 
 <!-- Colum 1 -->
             <div class="column-1">
-                <button class="arrow_button"> 
-                    <img class="left_arrow arrow_img" src="images/arrow.png" alt=""> 
-                </button>
+
                 <div class="shirt">
-                    <img class="merch" src="images/shirt.png" alt="pollákos póló" >
+
+                    <div class="arrow_button left_arrow" onclick="plusSlides(-1)"> 
+                        <img class="arrow_img" src="images/arrow.png" alt=""> 
+                    </div>
+
+                    <!-- Slideshow Imgs -->
+                    <div class="slide">
+                        <img class="merch" src="images/shirt1.png" alt="pollákos póló" >
+                    </div>
+                    <div class="slide">
+                        <img class="merch" src="images/shirt2.png" alt="pollákos póló" >
+                    </div>
+                    <div class="slide ">
+                        <img class="merch" src="images/shirt3.png" alt="pollákos póló" >
+                    </div>
+                    <div class="slide ">
+                        <img class="merch" src="images/shirt4.png" alt="pollákos póló" >
+                    </div>
+
+                    <!-- Color Picker -->
                     <div class="colors">
                         
                         <button class="color yellow"></button>
@@ -49,10 +65,25 @@
                         <button class="color black"></button>
 
                     </div>
+
+                    <!-- Nav dots for Slideshow -->
+                    <div class="dots">
+
+                        <span class="dot" onclick="Slide(1)" ></span>
+                        <span class="dot" onclick="Slide(2)" ></span>
+                        <span class="dot" onclick="Slide(3)" ></span>
+                        <span class="dot" onclick="Slide(4)" ></span>
+                    
+                    </div>
+
+                    <div class="arrow_button right_arrow" onclick="plusSlides(1)"> 
+                        <img class="arrow_img" src="images/arrow.png" alt=""> 
+                    </div>
+
                 </div>
-                <button class="arrow_button"> 
-                    <img class="right_arrow arrow_img" src="images/arrow.png" alt=""> 
-                </button>
+
+
+
             </div>
             
 <!-- Colum 2 -->
