@@ -262,8 +262,10 @@ input[type="text"]::placeholder {
     align-items: center;
 }
 img {
-    width: 12dvw;
-    height: 24dvh;
+    min-width: 12dvw;
+    min-height: 24dvh;
+    max-width: 12dvw;
+    max-height: 24dvh;
     border-radius: 20px;
     padding: 0px;
     margin-left: -10px;
@@ -421,4 +423,28 @@ p {
 }
 .hozza {
     overflow: visible;
+}
+
+/*-------------------------------------------Reszponzivitas---------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    .right-cell { /* Adjust the class name as needed */
+        order: 1; /* Place the right cell at the bottom */
+    }
+}
+
+.flexbox{
+    display: flex;
+    gap: 30px;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
 }
