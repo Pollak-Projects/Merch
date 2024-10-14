@@ -3,6 +3,7 @@
     --input: #868686;
     --text_color: #F2F2F2;
     --off: #dddcdc;
+    font-family: sans-serif;
 }
 html{
       background-image: url("imgs/bg.png"); 
@@ -26,11 +27,14 @@ html{
     justify-items: center;
     filter:drop-shadow(23px 22px 17.9px rgba(255, 255, 255, 0.2));
     border-radius: 10px;
-    gap: 30px;
+    gap: 15px;
 }
 
 body {
- 
+
+    backdrop-filter: blur(4px);
+    height: 100dvh;
+    margin: 0;
     backdrop-filter: blur(4px);
     height: 100dvh;
     margin: 0;
@@ -46,7 +50,6 @@ body {
     color: #000;
     width: 261px;
     height: 30px;
-    font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -89,25 +92,31 @@ input:hover, input:focus{
     background-color: var(--off);
 }
 
-p, a, a:visited{
+a, a:visited{
     text-align: center;
     color: var(--btn);
-    font-family: Inter;
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: -0.6px;
 }
 p{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.6px;   
+    line-height: 1.8;
     margin-bottom: 40px;
-    margin-top: 0;    
+    margin-top: 0;
 }
 
 h1{
     color: #000;
     text-align: center;
-    font-family: Inter;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -141,7 +150,7 @@ input:hover::placeholder,  input:focus::placeholder{
         border-radius: 0;
         border-top: 10px solid var(--btn);
         align-content: center;
-        gap: 30px;
+        gap: 15px;
     }
     h1{
         width: 100%;
@@ -163,8 +172,7 @@ input:hover::placeholder,  input:focus::placeholder{
         display: none;
     }
 
-    .switches{
-        
+    .switches{ 
         display: flex;
         align-items: flex-end;
         position: absolute;
@@ -172,7 +180,6 @@ input:hover::placeholder,  input:focus::placeholder{
     }
     a, a:visited{
         color: var(--text_color);
-        font-family: Inter;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
