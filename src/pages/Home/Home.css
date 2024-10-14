@@ -230,14 +230,14 @@ main {
 
 /* End Cloumn 1 */
 
-/* Start Cloumn 2 (Sanyi)*/
+/* Start Cloumn 2 (Sanyi + Kitti)*/
 
 .column-2 {
     background-color: blue;
     width: 25%; height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-/* End Cloumn 1 */
 
 /*Column 3 Contents (Kitti)*/
 
