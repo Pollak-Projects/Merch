@@ -1,12 +1,16 @@
 :root{
     --btn: #4492F6;
-    --input: #868686;
+    --input: #A6A6A6;
+    --text_color: #F2F2F2;
     --text_color: #F2F2F2;
     --off: #dddcdc;
+  
 }
+
 html{
       background-image: url("imgs/bg.png"); 
 }
+
 .container{
     display: flex;
     justify-content: center;
@@ -30,7 +34,11 @@ html{
 }
 
 body {
- 
+
+    background-image: url("imgs/bg.png");
+    backdrop-filter: blur(4px);
+    height: 100dvh;
+    margin: 0;
     backdrop-filter: blur(4px);
     height: 100dvh;
     margin: 0;
@@ -54,7 +62,6 @@ body {
     letter-spacing: -0.72px;
     border: none;
     transition-duration: 0.4s;
-
 }
 
 button{
@@ -79,7 +86,7 @@ button{
 }
 
 button:hover, button:focus{
-    background-color: #a592eb;
+    background-color: rgb(130, 130, 218);
 }
 #regisztracio:hover,  #regisztracio:focus{
 
@@ -99,10 +106,12 @@ p, a, a:visited{
     line-height: 120%;
     letter-spacing: -0.6px;
 }
+
 p{
     margin-bottom: 40px;
     margin-top: 0;    
 }
+
 
 h1{
     color: #000;
@@ -117,6 +126,7 @@ h1{
 .switches{
     display: none;
 }
+
 ::placeholder{
     color: var(--text_color);
 }
@@ -192,6 +202,7 @@ input:hover::placeholder,  input:focus::placeholder{
         letter-spacing: -0.96px;
         text-decoration: none;
         font-weight: 600;
+
         display: flex;
         justify-content: center;
         align-items: center;
