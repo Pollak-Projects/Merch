@@ -115,18 +115,23 @@ main {
     border-radius: 20px;
 
     filter: drop-shadow(4px 4px 6px White);
+
+    user-select: none;
+    -drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
 }
 
 /* Colorpicker */
 
 .colors{
     display: flex;
-    flex-direction: column;
     gap: 5px;
 
     position: absolute;
     top: 10px;
-    left: 13%;
+    left: 14%;
 }
 
 .color{
@@ -165,8 +170,21 @@ main {
 .slide{
     display: none;
     justify-content: center;
-}
 
+    overflow: none;
+
+        -webkit-animation: slide 0.5s forwards;
+        -webkit-animation-delay: 2s;
+        animation: slide 0.5s forwards;
+        animation-delay: 2s;
+    }
+    @-webkit-keyframes slide {
+        100% { left: 0; }
+    }
+    
+    @keyframes slide {
+        100% { left: 0; }
+    }
 /* Slideshow arrows */
 
 .arrow_img{
