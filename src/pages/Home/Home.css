@@ -46,23 +46,25 @@ footer {
     padding-left: 5%;
     width: 100vw;
     background-color: #030A1B;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    box-sizing: border-box; 
+    
 }
 
-footer p {
+.jogok {
     color: #ADF4FF;
-    font-size: 14px;
-    margin: 0;
+    font-size: 15px;
     padding-top: 5px;
     text-align: center;
-    width: 100%;
+    position: absolute;
+    width: 85%;
 }
 
-footer .icons {
+.icons {
     display: flex;
+    
     gap: 15px; 
 }
 
