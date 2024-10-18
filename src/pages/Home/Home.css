@@ -127,21 +127,22 @@ main {
 
 .colors{
     display: flex;
-    gap: 5px;
+    gap: 10px;
 
     position: absolute;
     top: 10px;
-    left: 13%;
+    left: 15%;
 }
 
 .color{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 4px solid #72c2ce;
+    border: 4px solid #ADF4FF;
     cursor: pointer;
 
     transition: 0.2s;
+    filter: drop-shadow(0px 7.714px 7.714px rgba(0, 0, 0, 0.25));
 }
 
 .color:hover{
@@ -149,20 +150,25 @@ main {
     height: 50px;
 }
 
+.color:active{
+    transform: scale(0.7);
+    filter: brightness(80%);
+}
+
 .yellow{
-    background-color: yellow;
+    background-color: #FDFFAD;
 }
 
 .red{
-    background-color: red;
+    background-color: #E92E2E;
 }
 
 .blue{
-    background-color: blue;
+    background-color: #446DFE;
 }
 
 .black{
-    background-color: black;
+    background-color: #181818;
 }
 
 /* Slideshow imgs */
