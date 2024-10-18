@@ -432,7 +432,6 @@ p {
 
 .flexbox{
     display: flex;
-    gap: 30px;
     background-color: azure;
     border-radius: 20px;
     font-weight: bold;
@@ -457,6 +456,7 @@ p {
     flex: 45%;
     justify-content: center;
     align-items: flex-start;
+    height: 100%;
   
     
 }
@@ -467,13 +467,54 @@ p {
     justify-content: space-evenly;
     align-items: flex-start;
     width: 100%;
-    min-height: 100%;
+    
 }
 .szall {
-    height: 100%;
     background-color: aliceblue;
     border-radius: 20px;
+    flex-grow: 2;
+    height: 100%;
 }
 h1 {
     margin-bottom: 10px;
+}
+.tnev {
+    font-size: 200%;
+}
+.grid{
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+
+}
+.gridsor1{
+    display: flex;
+}
+.grid1{
+   flex: 50%;
+}
+.grid2{
+   flex: 50%;
+}
+.gridsor2{
+    display: flex;
+}
+.grid3{
+   flex: 100%;
+}
+.gridsor3 {
+    display: flex;
+}
+.grid4{
+   flex: 50%;
+   display: flex;
+}
+.grid5{
+   flex: 50%;
+}
+.szingomb {
+    flex: 50%;
+}
+.szinszoveg {
+    flex: 50%;
 }
