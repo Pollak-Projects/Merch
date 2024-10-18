@@ -290,6 +290,73 @@ slides{
     flex-direction: column;
 }
 
+.content-1 {
+    background-color: #E92E2E;
+    margin: 1vw;
+    margin-top: 4vw;
+    padding: 1vw;
+}
+
+.polo-header {
+    color: #FFF;
+    font-size: 2.6vw;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: -0.23px;
+}
+
+/*elso oszlop 1 masodik oszlop + -*/
+.darab {
+    display: flex;
+}
+
+.ertek {
+    border-radius: 20px;
+    background: var(--ADF4FF, #F2F2F2);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 7vw;
+    text-align: center;
+    padding: 0.7vw;
+    margin: 15px 0px 15px;
+    font-size: 1.4vw;
+}
+
+.darabszam {
+    border-radius: 15px;
+    background: var(--ADF4FF, #F2F2F2);
+    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 0.6vw;
+    width: 2.3vw;
+    font-size: 1.5vw;
+}
+
+.operatorok{
+    border-radius: 15px;
+    background: var(--ADF4FF, blue);
+    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 0.2vw;
+    font-size: 1.5vw;
+}
+
+.hozzaadas{
+    border-radius: 10px;
+    background: var(--ADF4FF, #F2F2F2);
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    padding:0.3vw;
+    width: 3vw;
+}
+
+.kivonas{
+    border-radius: 10px;
+    background: var(--ADF4FF, #F2F2F2);
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
+    padding:0.3vw
+}
+
+
 /*Column 3 Contents (Kitti)*/
 
 .column-3 {
