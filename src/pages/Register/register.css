@@ -44,6 +44,14 @@ body{
 
 .logo{
     width: 50%;
+ 
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 input{
@@ -222,6 +230,5 @@ button:hover, button:focus, .login_link:hover, .login_link:focus{
         height: 69px;
         font-size: 36px;
         box-shadow: -6px -8px 6px 6px rgba(0, 0, 0, 0.25);
-
     }
 }
