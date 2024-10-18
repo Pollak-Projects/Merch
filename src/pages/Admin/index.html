@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div style="display: flex; height: 100vh;">
+        <div style="width: 200px; background-color: #f4f4f4; padding: 20px;">
+            <ul style="list-style-type: none; padding: 0;">
+                <li><a href="termekek.html">Termékek</a></li>
+                <li><a href="felhasznalok.html">Felhasználók</a></li>
+                <li><a href="rendelesek.html">Rendelések</a></li>
+                <li><a href="#">Beállítások</a></li>
+                <li><a href="#">Kijelentkezés</a></li>
+            </ul>
+        </div>
+
+        <div style="flex-grow: 1; padding: 20px;">
+            <div id="termekek" style="display: block;">
+                <h2>Termékek</h2>
+                <div style="margin-bottom: 20px;">
+                    <input type="text" id="termekId" placeholder="Termék ID" oninput="checkForm()">
+                    <input type="text" id="termekNev" placeholder="Termék név" oninput="checkForm()">
+                    <input type="number" id="termekAr" placeholder="Termék ára" oninput="checkForm()">
+                    <input type="text" id="termekLeiras" placeholder="Termék leírása" oninput="checkForm()">
+                    <button id="hozzaadasButton" disabled onclick="addProduct()">Hozzáadás</button>
+                </div>
+
+
+                <table border="1" cellpadding="10" style="margin-top: 20px; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Termék id</th>
+                            <th>Termék név</th>
+                            <th>Termék ára</th>
+                            <th>Termék leírása</th>
+                            <th>Készlet</th>
+                            <th>Műveletek</th>
+                        </tr>
+                    </thead>
+                    <tbody id="termekTableBody">
+                        <tr>
+                            <td>1</td>
+                            <td>Sample Product</td>
+                            <td>10 000 Ft</td>
+                            <td>Példa termék leírás</td>
+                            <td>100 db</td>
+                            <td><button onclick="editProduct()">Szerkesztés</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div id="felhasznalok" style="display: none;">
+                <h2>Felhasználó Adatok</h2>
+                <div style="border: 1px solid #ddd; padding: 20px;">
+                    <p><strong>Felhasználó neve:</strong> Minta Felhasználó</p>
+                    <p><strong>Felhasználó email:</strong> minta@felhasznalo.hu</p>
+                    <p><strong>Felhasználó tel.:</strong> +36 30 123 4567</p>
+                    <button onclick="editUser()">Szerkesztés</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function checkForm() {
+            const id = document.getElementById('termekId').value;
+            const nev = document.getElementById('termekNev').value;
+            const ar = document.getElementById('termekAr').value;
+            const leiras = document.getElementById('termekLeiras').value;
+
+
+            if (id && nev && ar && leiras) {
+                document.getElementById('hozzaadasButton').disabled = false;
+            } else {
+                document.getElementById('hozzaadasButton').disabled = true;
+            }
+        }
+
+
+        function addProduct() {
+            const id = document.getElementById('termekId').value;
+            const nev = document.getElementById('termekNev').value;
+            const ar = document.getElementById('termekAr').value;
+            const leiras = document.getElementById('termekLeiras').value;
+
+            const tableBody = document.getElementById('termekTableBody');
+            const newRow = document.createElement('tr');
+
+            newRow.innerHTML = `
+                <td>${id}</td>
+                <td>${nev}</td>
+                <td>${ar} Ft</td>
+                <td>${leiras}</td>
+                <td>0 db</td>
+                <td><button onclick="editProduct()">Szerkesztés</button></td>
+            `;
+
+            tableBody.appendChild(newRow);
+
+  
+            document.getElementById('termekId').value = '';
+            document.getElementById('termekNev').value = '';
+            document.getElementById('termekAr').value = '';
+            document.getElementById('termekLeiras').value = '';
+            document.getElementById('hozzaadasButton').disabled = true;
+        }
+
+
+        function editProduct() {
+            alert("Szerkesztés funkció később lesz elérhető");
+        }
+
+
+        function editUser() {
+            alert("Szerkesztés funkció később lesz elérhető");
+        }
+
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                if (href === "termekek.html") {
+                    document.getElementById('termekek').style.display = 'block';
+                    document.getElementById('felhasznalok').style.display = 'none';
+                } else if (href === "felhasznalok.html") {
+                    document.getElementById('termekek').style.display = 'none';
+                    document.getElementById('felhasznalok').style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
