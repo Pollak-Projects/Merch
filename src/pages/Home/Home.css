@@ -110,14 +110,10 @@ main {
 }
 
 .merch{
-    height: 80%;
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
 
-    filter: drop-shadow(4px 4px 6px White);
-
     user-select: none;
-    -drag: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
@@ -173,8 +169,15 @@ main {
 
 /* Slideshow imgs */
 
-slides{
+.wrapper{
+    width: 80%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
     overflow: hidden;
+    
+    filter: drop-shadow(4px 4px 6px White);
 }
 
 .slide{
@@ -249,7 +252,6 @@ slides{
 .animate{
     animation-name: slide;
     animation-duration: 2s;
-    transition: transform 1s ease-in-out;
 }
 
 @keyframes slide{
