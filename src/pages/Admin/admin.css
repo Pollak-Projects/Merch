@@ -135,8 +135,13 @@ body {
         
     }
     .sidebar {
-        width: 350px!important;
+        width: 100dvh!important;
         height: 50px!important;
+
+    }
+    #closenav {
+        display: none;
+        
     }
   }
 
