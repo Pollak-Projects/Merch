@@ -1,0 +1,450 @@
+html {
+    background-image: url("../Checkout/images/night.png");
+}
+body {
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100%;
+    overflow-x: hidden; 
+    height: 100dvh;
+    backdrop-filter: blur(4px);
+    font-family: sans-serif;
+    
+}
+nav{
+    padding: 0.2vh 6vh;
+    background-color: #030A1B;
+    width: 100%;
+}
+.shopping-cart
+{
+    padding:0vh;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0.2vh 6vh;
+    width: 100vw;
+    background-color: #030A1B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+footer p {
+    color: #ADF4FF;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+footer .icons {
+    display: flex;
+    gap: 15px; 
+}
+svg {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    overflow-y: auto;
+}
+
+.container {
+    width: 90%; height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.szallitas p {
+    margin:0.5vh;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid black;
+  }
+
+.in-line-svg svg{
+    cursor: default;
+}
+
+/*
+.szallitas-info
+{
+    background-color:  #ADF4FF;
+    width: 85%; height: 10%;
+}
+*/
+
+/* --- */
+
+.merch {
+    height: 80%;
+    border-radius: 20px;
+}
+
+
+td{
+    padding: 15px;
+    text-align: center;
+   
+}
+div{
+    background-color: azure;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+
+
+}
+.polo {
+    height: 20dvh;
+    width: 50dvw;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.szall {
+    height: 110dvh;
+    width: 30dvw;
+}
+.szall1 {
+    
+    font-size: 150%;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.szall2 {
+    
+    font-size: 125%;
+    text-align: center;
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.kek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #4492f6;
+    width: 7dvw;
+    height: 4dvh;
+    margin: 5px;
+    font-size: 100%;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.kek:hover{
+    background-color: white;
+    color: #4492f6;
+    cursor: pointer;
+}
+.pios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #dc1414;
+    width: 17dvw;
+    height: 4dvh;
+    margin: 5px;
+    font-size: 160%;
+    color: rgb(77, 15, 15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 900;
+    border: 1px solid #dc1414;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.pios:hover{
+    background-color: #ffb8b8;
+    color: rgb(77, 15, 15);
+    cursor: pointer;
+    border: 1px solid #ffb8b8;
+}
+.flex1{
+    display: flex;
+}
+h1{
+    text-align: center;
+    color: azure;
+    font-size: 200%;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: -20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: azure;
+    border-radius: 500px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(249, 255, 255);
+    border-radius: 500px;
+  }
+  form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  input[type="text"] {
+    width: 80%; 
+    margin: 0px 0; 
+    padding: 8px; 
+    border: 1px solid #bedfff; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    color: #0b0b0b; 
+    background-color: #bedfff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+}
+input[type="text"]::placeholder {
+    color: black; 
+}
+.checkbox-container {
+    display: flex;
+    align-items: center; 
+    margin: 10px 0; 
+}
+
+.checkbox-container input {
+    margin-right: 10px; 
+}
+.shirt {
+    display: flex;
+    align-items: center;
+}
+img {
+    min-width: 12dvw;
+    min-height: 24dvh;
+    max-width: 12dvw;
+    max-height: 24dvh;
+    border-radius: 20px;
+    padding: 0px;
+    margin-left: -10px;
+    display: block;
+}
+
+/*-------------------------------------------Bonyolult rész---------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+*/
+
+.asztal {
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    
+}
+.arutd {
+    padding: 0px;
+    text-align: center;
+    width: auto;
+    min-height: 0; /* Ensure there's no minimum height */
+    height: auto; /* Allow it to shrink */
+}
+p {
+    font-size: 10px;
+}
+.amount {
+    font-size: 50%;
+    background-color: #bedfff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    
+}
+.tdd2 {
+    text-align: right; /* Centers text horizontally */
+    height: 20px;
+    padding: 0px;
+}
+.ar {
+    font-size: 50%;
+    background-color: #bedfff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+.tdd4 {
+    padding: 0px;
+}
+.tdd3 {
+    padding: 0px;
+}
+.x {
+    font-size: 50%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #dc1414;
+    width: 18dvw;
+    height: 3dvh;
+    color: rgb(240, 240, 240);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+    white-space: nowrap;
+    font-style: normal;
+    border: 1px solid #dc1414;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.x:hover{
+    background-color: #ffb8b8;
+    color: rgb(77, 15, 15);
+    cursor: pointer;
+    border: 1px solid #ffb8b8;
+}
+.tdd6 {
+    padding: 0px;
+}
+.neve {
+    font-size: 80%;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 30px;
+    padding-left: 12px;
+    display: flex;
+    justify-content: left; 
+    align-items: center; 
+    margin: 0px;
+    margin-top: -15px; /* EZ AZ EGY DOLOG KÉT ÓRÁMAT VETTE EL KI NE VEDD MERT SIROK SJDVBASDFIVB */
+}
+.tdd1 {
+    text-align: center; /* Centers text horizontally */
+    height: 20px;
+    padding: 0px;
+}
+.szine{
+    font-size: 60%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0px;
+}
+.tdd5 {
+    padding: 0px;
+}
+.continens {
+    display: flex;
+    align-items: center; /* Optional: aligns items vertically */
+}
+.szin2 {
+    margin-bottom: -15px;
+    margin-top: -15px;
+    margin-right: 15px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 500px;
+    color: antiquewhite;
+    height: 3px;
+    width: 3px;
+}
+.pluszjel {
+    height: 20dvh;
+    width: 10dvw;
+    border: 5px solid rgb(91, 91, 168);
+    border-radius: 20px;
+    font-size: 250%;
+    color: rgb(91, 91, 168);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 0px;
+    margin-left: -10px;
+    background-color: rgb(216, 216, 243);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.pluszjel:hover{
+    background-color: rgb(91, 91, 168);
+    color: rgb(216, 216, 243);
+    cursor: pointer;
+    border: 5px solid rgb(91, 91, 168);
+}
+
+.hozzap {
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+}
+.hozza {
+    overflow: visible;
+}
+
+/*-------------------------------------------Reszponzivitas---------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    .right-cell { /* Adjust the class name as needed */
+        order: 1; /* Place the right cell at the bottom */
+    }
+}
+
+.flexbox{
+    display: flex;
+    gap: 30px;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+}
