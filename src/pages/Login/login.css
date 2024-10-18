@@ -34,13 +34,11 @@ html{
     gap: 15px;
 }
 
-body {
 
-    background-image: url("imgs/bg.png");
+body {
     backdrop-filter: blur(4px);
     height: 100dvh;
     margin: 0;
-    backdrop-filter: blur(4px);
     height: 100dvh;
     margin: 0;
     display: flex;
@@ -148,7 +146,7 @@ input:hover::placeholder,  input:focus::placeholder{
     justify-items: center;
     padding: 0;
 }
-img{
+.img{
     width: 50%;
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -239,7 +237,7 @@ img{
         height: 41px;
         font-size: 28px;
     }
-    img{
+    .img{
         width: 40%;
     }
     .logo_container{
