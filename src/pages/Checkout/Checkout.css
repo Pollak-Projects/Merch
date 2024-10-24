@@ -151,6 +151,7 @@ td{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
     white-space: nowrap;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
 }
 .kek:hover{
     background-color: white;
@@ -174,6 +175,7 @@ td{
     font-weight: 900;
     border: 1px solid #dc1414;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
 }
 .pios:hover{
     background-color: #ffb8b8;
@@ -485,25 +487,49 @@ h1 {
    display: flex;
    flex-direction: column;
    flex-grow: 1;
-
+   min-height: 130.88px;
+   max-height: 130.88px;
 }
 .gridsor1{
     display: flex;
+    height: 100%;
 }
 .grid1{
    flex: 50%;
+   font-weight: bold;
+   font-style: italic;
+   font-size: x-large;
+   padding: 5px;
 }
 .grid2{
    flex: 50%;
+   font-weight: bold;
+   font-style: italic;
+   font-size: larger;
+   padding-right: 10px;
+   padding-top: 10px;
+   text-align: right;
+   background-color: #ADF4FF;
+   border-radius: 20px;
 }
 .gridsor2{
     display: flex;
+    height: 100%;
 }
 .grid3{
    flex: 100%;
+   font-weight: bold;
+   font-style: italic;
+   font-size: larger;
+   padding-right: 10px;
+   padding-top: 10px;
+   text-align: right;
+   background-color: #ADF4FF;
+   border-radius: 20px;
 }
 .gridsor3 {
     display: flex;
+    height: 100%;
 }
 .grid4{
    flex: 50%;
@@ -511,10 +537,32 @@ h1 {
 }
 .grid5{
    flex: 50%;
+   font-size: 50%;
+   margin: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+   background-color: #dc1414;
+   width: 18dvw;
+   height: 3dvh;
+   color: rgb(240, 240, 240);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+   white-space: nowrap;
+   font-style: normal;
+   border: 1px solid #dc1414;
+   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .szingomb {
-    flex: 50%;
+   
 }
 .szinszoveg {
     flex: 50%;
+}
+
+.grid5:hover{
+    background-color: #ffb8b8;
+    color: rgb(77, 15, 15);
+    cursor: pointer;
+    border: 1px solid #ffb8b8;
 }
