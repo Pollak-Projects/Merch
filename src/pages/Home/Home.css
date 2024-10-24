@@ -286,16 +286,16 @@ main {
 /* Start Cloumn 2 (Sanyi + Kitti)*/
 
 .column-2 {
-    background-color: blue;
+    user-select: none;
+    background-color: rgba(100, 0, 100, 0.5);
     width: 25%; height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .content-1 {
-    background-color: #E92E2E;
     margin: 1vw;
-    margin-top: 4vw;
+    margin-top: 6vw;
     padding: 1vw;
 }
 
@@ -314,48 +314,60 @@ main {
 }
 
 .ertek {
-    border-radius: 20px;
+    border-radius: 30px;
     background: var(--ADF4FF, #F2F2F2);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 7vw;
+    width: 8vw;
     text-align: center;
-    padding: 0.7vw;
-    margin: 15px 0px 15px;
+    padding: 0.6vw;
+    margin: 30px 0px 15px;
     font-size: 1.4vw;
 }
 
 .darabszam {
-    border-radius: 15px;
+    border-radius: 25px;
     background: var(--ADF4FF, #F2F2F2);
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
     text-align: center;
     padding: 0.6vw;
-    width: 2.3vw;
+    width: 2.5vw;
+    height: 1.5vw;
     font-size: 1.5vw;
 }
 
 .operatorok{
-    border-radius: 15px;
-    background: var(--ADF4FF, blue);
-    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
     text-align: center;
-    padding: 0.2vw;
-    font-size: 1.5vw;
+
+    height: 2.8vw;
+    width: 5.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:end;
+    justify-content: space-evenly;
 }
 
 .hozzaadas{
-    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
     background: var(--ADF4FF, #F2F2F2);
-    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
-    padding:0.3vw;
-    width: 3vw;
+    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
+    width: 4.5vw;
+    height: 1.1vw;
+    font-size: x-large;
 }
 
 .kivonas{
-    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
     background: var(--ADF4FF, #F2F2F2);
-    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.25);
-    padding:0.3vw
+    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
+    width: 4.5vw;
+    height: 1.1vw;
+    font-size: x-large;
 }
 
 
