@@ -88,8 +88,9 @@ main {
 
 /* Start Cloumn 1 (Robi)*/
 
-.column-1, .shirt, .arrow_button{
+.column-1, .shirt, .arrow_button, .slides{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -106,7 +107,6 @@ main {
 .shirt{
     width: 100dvh;
     max-width: 100%;
-    position: relative;
 }
 
 .merch{
@@ -127,7 +127,7 @@ main {
 
     position: absolute;
     top: 10px;
-    left: 15%;
+    left: 12%;
 }
 
 .color{
@@ -174,6 +174,7 @@ main {
     display: block;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     overflow: hidden;
     
@@ -183,6 +184,10 @@ main {
 .slide{
     display: none;
     justify-content: center;
+    position: relative;
+}
+
+.slides{
     position: relative;
 }
 
@@ -211,11 +216,11 @@ main {
 .left_arrow{
     rotate: 180deg;
     z-index: 2;
-    left: 10%;
+    left: 8%;
 }
 
 .right_arrow{
-    right: 10%;
+    right: 8%;
 }
 
 .arrow_button:hover{
@@ -263,23 +268,6 @@ main {
         transform: translateX(0%);
     }
 }
-
-/* A bit of Responsivity */
-@media only screen and (max-width: 1700px) {
-
-    .colors{
-        left: 12%;
-    }
-
-    .left_arrow{
-        left: 8%;
-    }
-    
-    .right_arrow{
-        right: 8%;
-    }
-
-  }
 
 /* End Cloumn 1 */
 
