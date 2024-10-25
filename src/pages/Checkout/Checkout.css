@@ -285,17 +285,7 @@ img {
 p {
     font-size: 10px;
 }
-.amount {
-    font-size: 50%;
-    background-color: #bedfff;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 0px;
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    
-}
+
 .tdd2 {
     text-align: right; /* Centers text horizontally */
     height: 20px;
@@ -487,36 +477,51 @@ h1 {
    display: flex;
    flex-direction: column;
    flex-grow: 1;
-   min-height: 130.88px;
-   max-height: 130.88px;
 }
 .gridsor1{
     display: flex;
     height: 100%;
+    flex-grow: 1;
 }
 .grid1{
    flex: 50%;
    font-weight: bold;
    font-style: italic;
-   font-size: x-large;
-   padding: 5px;
+   font-size: xx-large;
+   padding: 10px;
 }
 .grid2{
+
    flex: 50%;
    font-weight: bold;
    font-style: italic;
    font-size: larger;
    padding-right: 10px;
    padding-top: 10px;
-   text-align: right;
-   background-color: #ADF4FF;
+   display: flex;
+   justify-content: end;
    border-radius: 20px;
+}
+.amount {
+    font-size: 100%;
+    background-color: #bedfff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 30px;
+    width: 30px;
+    
 }
 .gridsor2{
     display: flex;
     height: 100%;
+    flex-grow: 1;
 }
 .grid3{
+    display: flex;
    flex: 100%;
    font-weight: bold;
    font-style: italic;
@@ -524,12 +529,25 @@ h1 {
    padding-right: 10px;
    padding-top: 10px;
    text-align: right;
-   background-color: #ADF4FF;
    border-radius: 20px;
+   justify-content: end;
+}
+.price{
+    font-size: 100%;
+    background-color: #bedfff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 30px;
+    width: fit-content;
 }
 .gridsor3 {
     display: flex;
     height: 100%;
+    flex-grow: 1;
 }
 .grid4{
    flex: 50%;
@@ -537,32 +555,84 @@ h1 {
 }
 .grid5{
    flex: 50%;
-   font-size: 50%;
+   display: flex;
+   justify-content: end;
+   
+}
+.torles{
+    font-size: 50%;
    margin: 0px;
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 5px;
    background-color: #dc1414;
-   width: 18dvw;
-   height: 3dvh;
    color: rgb(240, 240, 240);
    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
    white-space: nowrap;
    font-style: normal;
    border: 1px solid #dc1414;
    transition: background-color 0.3s ease, color 0.3s ease;
+   border-radius: 10px;
+   height: 30px;
+   width: 30px;
+   margin-right: 10px;
 }
 .szingomb {
-   
-}
-.szinszoveg {
+    display: flex;
     flex: 50%;
+    justify-content: left;
+    align-items: center;
+}
+.szingomb2{
+    color: #fdd1d1;
+    background-color: #fdd1d1;
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+    border: 5px solid black;
+    margin-left: 10px;
+}
+.szinszoveg2 {
+    font-size: 150%;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    height: 30px;
+    width: fit-content;
 }
 
-.grid5:hover{
+.torles:hover{
     background-color: #ffb8b8;
     color: rgb(77, 15, 15);
     cursor: pointer;
     border: 1px solid #ffb8b8;
+}
+.plusz2 {
+    min-width: 12dvw;
+    min-height: 24dvh;
+    max-width: 12dvw;
+    max-height: 24dvh;
+    border-radius: 20px;
+    margin-left: -10px;
+    padding: 0px;
+    border: 5px solid #4492f6;
+    color: #4492f6;
+    font-size: 500%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #bedfff;
+    transition: all 0.3s;
+}
+.plusz2:hover{
+    border: 5px solid #bedfff;
+    color: #bedfff;
+    background-color: #4492f6;
+    cursor: pointer;
+}
+.tnev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
