@@ -2,6 +2,7 @@
 body {
     background-image: url('images/bg.png');
    backdrop-filter: blur(3px);
+ 
 }
 
 .link-underline {
@@ -136,12 +137,16 @@ body {
     }
     .sidebar {
         width: 100dvh!important;
-        height: 50px!important;
+        height: 300px!important;
+        border-radius: 0px!important;
 
     }
     #closenav {
         display: none;
         
+    }
+    .navbar-bottom {
+bottom: auto;
     }
   }
 
@@ -173,10 +178,6 @@ body {
     .navbar-dropdown {
         position: static;
 }}
-#sidebar {
-    display: none;
-
-}
-#sidebaricon {
-    display: flex;
+#sidebar, #sidebar2 {
+    transition: 0.5s;
 }

@@ -1,8 +1,16 @@
+ 
   function openSidebar() {
-    document.querySelector(".sidebar").classList.toggle("hidden");
+    document.querySelector(".sidebar").classList.toggle("translate-x-[-192px]");
+    document.querySelector(".sidebar").classList.toggle("max-[800px]:translate-x-[0px]");
+    document.querySelector(".sidebar").classList.toggle("max-[800px]:translate-y-[-300px]");
+    document.querySelector("#sidebar2").classList.toggle("translate-x-[-192px]");
+    document.querySelector("#sidebar2").classList.toggle("max-[800px]:translate-x-[0px]");
+    document.querySelector("#sidebar2").classList.toggle("max-[800px]:translate-y-[-300px]");
   }
   function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("sidebar").style.width = "250px";
+    
+
   }
   
   function closeNav() {
