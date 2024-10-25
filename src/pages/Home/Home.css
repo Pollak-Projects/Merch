@@ -296,7 +296,7 @@ main {
     letter-spacing: -0.23px;
 }
 
-/*elso oszlop 1 masodik oszlop + -*/
+/* elso sor */
 .darab {
     display: flex;
 }
@@ -344,7 +344,13 @@ main {
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
     width: 4.5vw;
     height: 1.1vw;
-    font-size: x-large;
+}
+
+.operatorok button:hover{
+    background-color: #dfdddd;
+}
+.operatorok button:active {
+    transform: translateY(1px);
 }
 
 .kivonas{
@@ -355,9 +361,70 @@ main {
     box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
     width: 4.5vw;
     height: 1.1vw;
-    font-size: x-large;
 }
 
+/* masodik sor */
+
+.content-2 {
+    margin: 1vw;
+    padding: 1vw;
+    height: 2.5vw; 
+    display: flex;
+    gap: 0.5vw;
+    width: 15vw;
+}
+
+.size{
+    width: 2.8vw;
+    height: 2.8vw;
+    background-color: #ADF4FF;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 250;
+    box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.size:hover{
+    background-color: #77d2e0;
+}
+.size:active {
+    transform: translateY(4px);
+}
+
+/* harmadik sor */
+
+.content-3 {
+    margin: 1vw; 
+    height: 3.5vw;
+    width: 17vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kosarba{
+    width: 10vw;
+    height: 3.5vw;
+    border-radius: 20px;
+    background-color: #04B8DC;
+    font-size: 1.5vw;
+    border: none;
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.kosarba-svg{
+    scale: 0.8;
+}
+
+.kosarba:hover{
+    background-color:#04aadc;
+}
+.kosarba:active {
+    transform: translateY(4px);
+}
 
 /*Column 3 Contents (Kitti)*/
 
