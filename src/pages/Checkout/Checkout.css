@@ -253,15 +253,15 @@ input[type="text"]::placeholder {
     align-items: center;
 }
 img {
-    min-width: 12dvw;
-    min-height: 24dvh;
-    max-width: 12dvw;
+    width: 230px;
+    min-height: 250px;
     max-height: 24dvh;
     border-radius: 20px;
     padding: 0px;
     margin-left: -10px;
     display: block;
 }
+
 
 /*-------------------------------------------Bonyolult rész---------------------------------------------------
 -------------------------------------------------------------------------------------------------------
@@ -635,4 +635,40 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flexbox3 {
+    display: flex;
+    flex-direction: row; /* Default: side by side */
+}
+
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 1000px) {
+    .flexbox3 {
+        flex-direction: column; /* Stack boxes vertically */
+    }
+    .flexboxjobb
+    {
+        margin-left: 11%;
+        width: 80%;
+    }
+    .kek
+    {
+        width: 120%;
+    }
+    .pios
+    {
+        width: 50%;
+    }
+    .flexboxbal
+    {
+        width: 110%;
+        margin-left: -14%;
+    }
+    .szall
+    {
+        width: 100%;
+    }
 }
