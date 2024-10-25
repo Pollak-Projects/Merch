@@ -148,3 +148,35 @@ body {
   
 
 
+  @media only screen and (max-width: 800px) {
+    .nav-mobile {
+        display: block;
+   }
+    nav {
+        width: 100%;
+        padding: 55px 0 15px;
+   }
+    nav ul {
+        display: none;
+   }
+    nav ul li {
+        float: none;
+   }
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+        background: #262626;
+   }
+    nav ul li ul li a {
+        padding-left: 30px;
+   }
+    .navbar-dropdown {
+        position: static;
+}}
+#sidebar {
+    display: none;
+
+}
+#sidebaricon {
+    display: flex;
+}
