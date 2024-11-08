@@ -585,8 +585,26 @@ h1 {
     align-items: center;
 }
 .szingomb2{
-    color: #fdd1d1;
-    background-color: #fdd1d1;
+    color: #f8e1e1;
+    background-color: #f8e1e1;
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+    border: 5px solid black;
+    margin-left: 10px;
+}
+.szingomb3{
+    color: yellow;
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+    border: 5px solid black;
+    margin-left: 10px;
+}
+.szingomb4{
+    color: red;
+    background-color: red;
     height: 30px;
     width: 30px;
     border-radius: 500px;
@@ -678,4 +696,9 @@ h1 {
         margin: 0px;
         padding: 0px;
     }
+}
+
+
+h1{
+    font-size: 50px;
 }
