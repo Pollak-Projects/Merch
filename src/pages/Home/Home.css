@@ -84,6 +84,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 /* Start Cloumn 1 (Robi)*/
@@ -273,6 +274,11 @@ main {
 /* Start Cloumn 2 (Sanyi + Kitti)*/
 
 .column-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     user-select: none;
     width: 20%; height: 100%;
     display: flex;
@@ -437,6 +443,11 @@ main {
 /*Column 3 Contents (Kitti)*/
 
 .column-3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     width: 20%; height: 100%;
     display: flex;
     align-content: center;
@@ -458,13 +469,16 @@ main {
     justify-items: center;
     background-color: azure;
     width: 100%;
-    padding-top:1.5vh;
+    padding-top:0.5vh;
     padding-bottom:1.5vh;
-    margin-top:8vh;
     font-size: 2.5vh;
     border-radius: 15px;
 }
-
+@media only screen and (min-width: 1200px){
+   .column-3 {
+        margin-top:-22vh;
+   } 
+}
 .szallitas-header {
     font-size: 4vh;
     margin:0;
@@ -516,3 +530,37 @@ main {
 }
 
 /* Phone View is mostly Likely gonna go here */
+
+@media only screen and ((max-width: 390px)) {
+    .container{
+        flex-direction: column;
+        overflow-y: scroll;
+        height:auto;
+        margin-top:30vh;
+    }
+    footer{
+        position: sticky;
+    }
+    .column-1
+    {
+        width: 100%;
+    }
+    .column-2{
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-1{
+        margin-top: 0.5vh;
+        margin-bottom: 0vh;
+        width:100%;
+    }
+    .polo-header{
+        font-size: 4vh;
+    }
+    footer{
+        position: relative;
+    }
+}
