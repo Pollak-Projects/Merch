@@ -43,13 +43,13 @@ footer {
     bottom: 0;
     height: 70px;
     padding-left: 5%;
-    width: 100vw;
+    width: 100%;
     background-color: #030A1B;
 
     display: flex;
     justify-content: start;
     align-items: center;
-    
+    z-index: 1;
 }
 
 .jogok {
@@ -531,36 +531,43 @@ main {
 
 /* Phone View is mostly Likely gonna go here */
 
-@media only screen and ((max-width: 390px)) {
+@media ((max-width: 640px)) {
     .container{
         flex-direction: column;
         overflow-y: scroll;
         height:auto;
-        margin-top:30vh;
-    }
-    footer{
-        position: sticky;
+        width: 100%;
+        margin-top:40vh;
     }
     .column-1
     {
         width: 100%;
     }
+    .ertek{
+        width: 100%;
+        height: 4vh;
+        font-size: 3.5vh;
+    }
+    .darabszam{
+        width: 50%;
+        height: 6vh;
+        font-size: 4.5vh;
+    }
+    .operatorok
+    {
+        width: 50%
+    }
+    .hozzaadas, .kivonas{
+        width: 100%;
+        height: fit-content;
+    }
     .column-2{
         width: 100%;
-        margin-right: 0;
+        height: auto;
         text-align: center;
         display: flex;
-        flex-direction: column;
-    }
-    .content-1{
-        margin-top: 0.5vh;
-        margin-bottom: 0vh;
-        width:100%;
     }
     .polo-header{
         font-size: 4vh;
-    }
-    footer{
-        position: relative;
     }
 }
