@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav>
-            <a href="Home.html">
+            <a class="home_button" href="Home.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <path d="M18 44V24H30V44M6 18L24 4L42 18V40C42 41.0609 41.5786 42.0783 40.8284 42.8284C40.0783 43.5786 39.0609 44 38 44H10C8.93913 44 7.92172 43.5786 7.17157 42.8284C6.42143 42.0783 6 41.0609 6 40V18Z" stroke="#ADF4FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -47,22 +47,22 @@
                 <img class="arrow_img" src="images/arrow.png" alt=""> 
             </div>
             <div class="wrapper">
-                <div class="slide animate">
+                <div class="slide">
                     <img class="merch" src="images/shirt1.png" alt="pollákos póló" >
                 </div>
             </div>
             <div class="wrapper">
-                <div class="slide animate">
+                <div class="slide">
                     <img class="merch" src="images/shirt2.png" alt="pollákos póló" >
                 </div>
             </div>
             <div class="wrapper">
-                <div class="slide animate">
+                <div class="slide">
                     <img class="merch" src="images/shirt3.png" alt="pollákos póló" >
                 </div>
             </div>
             <div class="wrapper">
-                <div class="slide animate">
+                <div class="slide">
                     <img class="merch" src="images/shirt4.png" alt="pollákos póló" >
                 </div>
             </div>
@@ -82,10 +82,10 @@
 
             <div class="dots">
 
-                <span class="dot" onclick="Slide(1)" ></span>
-                <span class="dot" onclick="Slide(2)" ></span>
-                <span class="dot" onclick="Slide(3)" ></span>
-                <span class="dot" onclick="Slide(4)" ></span>
+                <span class="dot" onclick="showSlides(1)" ></span>
+                <span class="dot" onclick="showSlides(2)" ></span>
+                <span class="dot" onclick="showSlides(3)" ></span>
+                <span class="dot" onclick="showSlides(4)" ></span>
             
             </div>
 
@@ -164,7 +164,7 @@
         </div>    
     </main>
     
-<!--     <footer>
+    <footer>
         <div class="icons">
             <a href="https://www.instagram.com/pollak.technikum/" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="38" viewBox="0 0 37 38" fill="none">
@@ -189,7 +189,7 @@
             <p>Minden jog fenntartva</p>
         </div>
         
-    </footer> -->
+    </footer>
 
     <script src="Home.js"></script>
 </body>

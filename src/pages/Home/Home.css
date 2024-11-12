@@ -1,5 +1,6 @@
-html {
+html{
     background-image: url(images/bg.png);
+    backdrop-filter: blur(4px);
 }
 
 *{
@@ -11,17 +12,13 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-size: 100%;
-    overflow-x: hidden; 
-    height: 100dvh;
-    backdrop-filter: blur(4px);
+    overflow-x: hidden;
 }
 
 /* Navbar */
 nav{
     width: 100%;
     height: 70px;
-    padding-left: 5%;
 
     background-color: #030A1B;
 
@@ -31,9 +28,13 @@ nav{
     flex-direction: row;
 }
 
+.home_button{
+    padding-left: 5%;
+}
+
 .nav-right {
     width: 100%;
-    padding-right: 10%;
+    padding-right: 5%;
     display: flex;
     justify-content: flex-end;
 }
@@ -85,6 +86,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 20px;
 }
 
 /* Start Cloumn 1 (Robi)*/
@@ -251,24 +253,6 @@ main {
     padding: 8px;
     border: 1px solid black;
 }
-
-/* Slideshow Animation */
-
-.animate{
-    animation-name: slide;
-    animation-duration: 2s;
-}
-
-@keyframes slide{
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(0%);
-    }
-}
-
 /* End Cloumn 1 */
 
 /* Start Cloumn 2 (Sanyi + Kitti)*/
@@ -532,42 +516,95 @@ main {
 /* Phone View is mostly Likely gonna go here */
 
 @media ((max-width: 640px)) {
+    main{
+        height: 100%;
+        padding-top: 20px;
+    }
+
     .container{
         flex-direction: column;
-        overflow-y: scroll;
-        height:auto;
+        overflow-y: auto;
+        height: auto;
         width: 100%;
-        margin-top:40vh;
     }
+
     .column-1
     {
         width: 100%;
     }
-    .ertek{
-        width: 100%;
-        height: 4vh;
-        font-size: 3.5vh;
+
+    .arrow_button{
+        height: 15%;
     }
-    .darabszam{
-        width: 50%;
-        height: 6vh;
-        font-size: 4.5vh;
-    }
-    .operatorok
-    {
-        width: 50%
-    }
-    .hozzaadas, .kivonas{
-        width: 100%;
-        height: fit-content;
-    }
+
     .column-2{
         width: 100%;
         height: auto;
         text-align: center;
         display: flex;
+        margin-right: 0;
     }
+
+    .ertek{
+        width: 100%;
+        height: 4vh;
+        font-size: 3.5vh;
+    }
+    
+    .darabszam{
+        width: 50%;
+        height: 6vh;
+        font-size: 4.5vh;
+        padding: 0;
+    }
+
     .polo-header{
         font-size: 4vh;
+    }
+
+    .content-1{
+        margin-bottom: 1vh;
+    }
+
+    .content-2{
+        margin-top: 0;
+        width: 50%;
+        height: 5vh;
+    }
+
+    .size{
+        width: 100%;
+        height: 100%;
+        font-size: 2vh;
+    }
+
+    .operatorok
+    {
+        width: 50%;
+        gap: 5px;
+    }
+
+    .hozzaadas, .kivonas{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .content-3{
+        width: 100%;
+        height: 100%;
+    }
+
+    .kosarba{
+        width: 50%;
+        height: 100%;
+    }
+
+    .column-3{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .szallitas{
+        width: 60%; 
     }
 }
