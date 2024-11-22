@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.2.2/src/css/pagedone.css " rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+    <div class="flex flex-container">
+   
+        <div class="w-48 h-screen py-10 px-6 transition-all duration-500 text-gray-900 bg-white rounded-b-lg tr  text-left capitalize font-medium shadow-lg z-100 sidebar " id="sidebar">
+         
+         <div class="elements">
+          <div class=" relative py-2 sm:max-w-xl sm:mx-auto">
+      
+                  <a href="./admin.html" class="font-display max-w-sm text-xl 	 leading-tight ">
+                      <span class="link link-underline link-underline-black text-black"> Profil </span>
+      
+                  </a>
+              </div>
+            <div class="relative py-2 sm:max-w-xl sm:mx-auto">
+              <a href="./termekek.html" class="font-display max-w-sm text-xl  leading-tight">
+                  <span class="link link-underline link-underline-black text-black"> Termékek </span>
+              </a>
+          </div>
+          <div class="relative py-2 sm:max-w-xl sm:mx-auto">
+            <a href="./felhasznalok.html" class="font-display max-w-sm text-xl  leading-tight">
+                <span class="link link-underline link-underline-black text-black"> Felhasználók </span>
+            </a>
+        </div>
+        <div class="relative py-2 sm:max-w-xl sm:mx-auto">
+          <a href="./rendelesek.html" class="font-display max-w-sm text-xl font-bold leading-tight">
+              <span class=" decoration-sky-500 text-black underline underline-offset-8"> Rendelések </span>
+          </a>
+      </div>
+      <div class="absolute px-6 navbar-bottom"
+      >
+      
+      
+      <div class="relative py-2  sm:max-w-xl sm:mx-auto">
+        <a href="../../index.html" class="font-display max-w-sm text-xl  leading-tight ">
+            <span class="link link-underline link-underline-black text-red-600	 "> Kijelentkezés </span>
+        </a>
+      </div>
+      </div>
+         
+            </div></div>
+            <div class="w-[50px] h-[50px] bg-white" onclick="openSidebar()" id="sidebar2"> <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg></div>
+          
+
+    <main>
+    
+        <div class="container fixed mx-[5%] w-100% h-[900px] mt-[1%] bg-white/75 align-center justify-center flex text-center	" >
+            <div class="w-auto h-48 bg-teal-500 rounded-2xl flex mt-8 opacity-[100%] ">
+                <div class="rounded-2xl mt-4 mx-8 h-[10rem] w-[10rem] bg-red-600 block"> 
+                    <div class="w-full h-16 visible lg:invisible">
+                    <button type="button" class="w-16 h-16 bg-amber-100 rounded-tr-2xl rounded-bl-2xl float-right ml-28">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-14 h-14 pl-[4px]">
+                        <path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/>
+                    </svg>
+                    </div>
+                    <div class="rounded-2xl w-32 h-10 bg-amber-100 relative mt-10 mx-auto text-center pt-2 ">
+                        Megrendelő neve
+                    </div>
+                </div>
+            <div class="hidden lg:block rounded-2xl mt-4 h-[10rem] w-48 bg-amber-100 pt-14">Megrendelt termékek listája</div>
+                <div class=" hidden lg:block">
+                    <div class="rounded-2xl mt-4 ml-8 h-16 w-[24rem] bg-amber-100 pt-4">Termékek összesített ára</div>
+                    <div class="rounded-2xl mt-8 ml-8 h-16 w-[24rem] bg-amber-100 pt-4">Megrendelés ID</div>
+                </div>
+                <div class="hidden lg:block rounded-2xl mt-28 ml-8 h-16 w-[12rem] bg-amber-100 pt-4">Státusz</div>
+                <a href="rendeles_szerk.html"><button type="button" class="hidden lg:block w-16 h-16 bg-amber-100 rounded-tr-2xl rounded-bl-2xl float-right ml-28">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-14 h-14 pl-[4px]">
+                        <path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1 0 32c0 8.8 7.2 16 16 16l32 0zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/>
+                    </svg>
+                </button></a>
+            </div>
+        </div>
+   
+
+    </main>
+</body>
+</html>

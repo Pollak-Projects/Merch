@@ -1,0 +1,704 @@
+html {
+    background-image: url("../Checkout/images/night.png");
+}
+body {
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100%;
+    overflow-x: hidden; 
+    height: 100dvh;
+    backdrop-filter: blur(4px);
+    font-family: sans-serif;
+    
+}
+nav{
+    padding: 0.2vh 6vh;
+    background-color: #030A1B;
+    width: 100%;
+}
+.shopping-cart
+{
+    padding:0vh;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0.2vh 6vh;
+    width: 100vw;
+    background-color: #030A1B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+footer p {
+    color: #ADF4FF;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+footer .icons {
+    display: flex;
+    gap: 15px; 
+}
+svg {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    overflow-y: auto;
+}
+
+.container {
+    width: 90%; height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.szallitas p {
+    margin:0.5vh;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid black;
+  }
+
+.in-line-svg svg{
+    cursor: default;
+}
+
+/*
+.szallitas-info
+{
+    background-color:  #ADF4FF;
+    width: 85%; height: 10%;
+}
+*/
+
+/* --- */
+
+.merch {
+    height: 80%;
+    border-radius: 20px;
+}
+
+
+td{
+    padding: 15px;
+    text-align: center;
+   
+}
+
+.polo {
+    height: 20dvh;
+    width: 50dvw;
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.szall1 {
+    
+    font-size: 150%;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.szall2 {
+    
+    font-size: 125%;
+    text-align: center;
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+.kek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #4492f6;
+    width: 7dvw;
+    height: 4dvh;
+    margin: 5px;
+    font-size: 100%;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+}
+.kek:hover{
+    background-color: white;
+    color: #4492f6;
+    cursor: pointer;
+}
+.pios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #dc1414;
+    width: 17dvw;
+    height: 4dvh;
+    margin: 5px;
+    font-size: 160%;
+    color: rgb(77, 15, 15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 900;
+    border: 1px solid #dc1414;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+}
+.pios:hover{
+    background-color: #ffb8b8;
+    color: rgb(77, 15, 15);
+    cursor: pointer;
+    border: 1px solid #ffb8b8;
+}
+.flex1{
+    display: flex;
+}
+h1{
+    text-align: center;
+    color: azure;
+    font-size: 200%;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: -20px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: azure;
+    border-radius: 500px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(249, 255, 255);
+    border-radius: 500px;
+  }
+  form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  input[type="text"] {
+    width: 80%; 
+    margin: 0px 0; 
+    padding: 8px; 
+    border: 1px solid #bedfff; 
+    border-radius: 10px; 
+    font-size: 16px; 
+    color: #0b0b0b; 
+    background-color: #bedfff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+}
+input[type="text"]::placeholder {
+    color: black; 
+}
+.checkbox-container {
+    display: flex;
+    align-items: center; 
+    margin: 10px 0; 
+}
+
+.checkbox-container input {
+    margin-right: 10px; 
+}
+.shirt {
+    display: flex;
+    align-items: center;
+}
+img {
+    width: 230px;
+    min-height: 250px;
+    max-height: 24dvh;
+    border-radius: 20px;
+    padding: 0px;
+    margin-left: -10px;
+    display: block;
+}
+
+
+/*-------------------------------------------Bonyolult rész---------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+*/
+
+.asztal {
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    
+}
+.arutd {
+    padding: 0px;
+    text-align: center;
+    width: auto;
+    min-height: 0; 
+    height: auto; 
+}
+p {
+    font-size: 10px;
+}
+
+.tdd2 {
+    text-align: right; 
+    height: 20px;
+    padding: 0px;
+}
+.ar {
+    font-size: 50%;
+    background-color: #bedfff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.tdd4 {
+    padding: 0px;
+}
+.tdd3 {
+    padding: 0px;
+}
+.x {
+    font-size: 50%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #dc1414;
+    width: 18dvw;
+    height: 3dvh;
+    color: rgb(240, 240, 240);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+    white-space: nowrap;
+    font-style: normal;
+    border: 1px solid #dc1414;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.x:hover{
+    background-color: #ffb8b8;
+    color: rgb(77, 15, 15);
+    cursor: pointer;
+    border: 1px solid #ffb8b8;
+}
+.tdd6 {
+    padding: 0px;
+}
+.neve {
+    font-size: 80%;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 30px;
+    padding-left: 12px;
+    display: flex;
+    justify-content: left; 
+    align-items: center; 
+    margin: 0px;
+    margin-top: -15px; /* EZ AZ EGY DOLOG KÉT ÓRÁMAT VETTE EL KI NE VEDD MERT SIROK SJDVBASDFIVB */
+}
+.tdd1 {
+    text-align: center; 
+    height: 20px;
+    padding: 0px;
+}
+.szine{
+    font-size: 60%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0px;
+}
+.tdd5 {
+    padding: 0px;
+}
+.continens {
+    display: flex;
+    align-items: center; 
+}
+.szin2 {
+    margin-bottom: -15px;
+    margin-top: -15px;
+    margin-right: 15px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 500px;
+    color: antiquewhite;
+    height: 3px;
+    width: 3px;
+}
+.pluszjel {
+    height: 20dvh;
+    width: 10dvw;
+    border: 5px solid rgb(91, 91, 168);
+    border-radius: 20px;
+    font-size: 250%;
+    color: rgb(91, 91, 168);
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 0px;
+    margin-left: -10px;
+    background-color: rgb(216, 216, 243);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.pluszjel:hover{
+    background-color: rgb(91, 91, 168);
+    color: rgb(216, 216, 243);
+    cursor: pointer;
+    border: 5px solid rgb(91, 91, 168);
+}
+
+.hozzap {
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+}
+.hozza {
+    overflow: visible;
+}
+
+/*-------------------------------------------Reszponzivitas---------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .right-cell { 
+        order: 1; 
+    }
+}
+
+.flexbox{
+    display: flex;
+    background-color: azure;
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    width: 80%;
+    
+}
+.flexboxbal{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 55%;
+    justify-content: center;
+    align-items: flex-end;
+   
+    
+}
+.flexboxjobb{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 45%;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+  
+    
+}
+.flexbox3{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+.szall {
+    background-color: aliceblue;
+    border-radius: 20px;
+    flex-grow: 2;
+    height: 100%;
+}
+h1 {
+    margin-bottom: 10px;
+}
+.tnev {
+    font-size: 200%;
+}
+.grid{
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+}
+.gridsor1{
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+}
+.grid1{
+   flex: 50%;
+   font-weight: bold;
+   font-style: italic;
+   font-size: xx-large;
+   padding: 10px;
+}
+.grid2{
+
+   flex: 50%;
+   font-weight: bold;
+   font-style: italic;
+   font-size: larger;
+   padding-right: 10px;
+   padding-top: 10px;
+   display: flex;
+   justify-content: end;
+   border-radius: 20px;
+}
+.amount {
+    font-size: 100%;
+    background-color: #bedfff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 30px;
+    width: 30px;
+    
+}
+.gridsor2{
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+}
+.grid3{
+    display: flex;
+   flex: 100%;
+   font-weight: bold;
+   font-style: italic;
+   font-size: larger;
+   padding-right: 10px;
+   padding-top: 10px;
+   text-align: right;
+   border-radius: 20px;
+   justify-content: end;
+}
+.price{
+    font-size: 100%;
+    background-color: #bedfff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: fit-content;
+}
+.gridsor3 {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+}
+.grid4{
+   flex: 50%;
+   display: flex;
+}
+.grid5{
+   flex: 50%;
+   display: flex;
+   justify-content: end;
+   
+}
+.torles{
+    font-size: 100%;
+   margin: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+   background-color: #dc1414;
+   color: rgb(240, 240, 240);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
+   white-space: nowrap;
+   font-style: normal;
+   border: 1px solid #dc1414;
+   transition: background-color 0.3s ease, color 0.3s ease;
+   border-radius: 10px;
+   height: 30px;
+   width: 30px;
+   margin-right: 10px;
+}
+.szingomb {
+    display: flex;
+    flex: 50%;
+    justify-content: left;
+    align-items: center;
+}
+.szingomb2{
+    color: #f8e1e1;
+    background-color: #f8e1e1;
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+    border: 5px solid black;
+    margin-left: 10px;
+}
+.szingomb3{
+    color: yellow;
+    background-color: yellow;
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+    border: 5px solid black;
+    margin-left: 10px;
+}
+.szingomb4{
+    color: red;
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 500px;
+    border: 5px solid black;
+    margin-left: 10px;
+}
+.szinszoveg2 {
+    font-size: 150%;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    height: 30px;
+    width: fit-content;
+}
+
+.torles:hover{
+    background-color: #ffb8b8;
+    color: rgb(77, 15, 15);
+    cursor: pointer;
+    border: 1px solid #ffb8b8;
+}
+.plusz2 {
+    min-width: 12dvw;
+    min-height: 24dvh;
+    max-width: 12dvw;
+    max-height: 24dvh;
+    border-radius: 20px;
+    margin-left: -10px;
+    padding: 0px;
+    border: 5px solid #4492f6;
+    color: #4492f6;
+    font-size: 500%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #bedfff;
+    transition: all 0.3s;
+}
+.plusz2:hover{
+    border: 5px solid #bedfff;
+    color: #bedfff;
+    background-color: #4492f6;
+    cursor: pointer;
+}
+.tnev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox3 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .flexbox3 {
+        flex-direction: column; 
+    }
+    .flexboxjobb
+    {
+        margin-left: 11%;
+        width: 80%;
+    }
+    .kek
+    {
+        width: 120%;
+    }
+    .pios
+    {
+        width: 50%;
+    }
+    .flexboxbal
+    {
+        width: 110%;
+        margin-left: -14%;
+    }
+    .szall
+    {
+        width: 100%;
+    }
+    body {
+        overflow-x: hidden; 
+    }
+    html {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+
+h1{
+    font-size: 50px;
+}
