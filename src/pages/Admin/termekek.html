@@ -8,51 +8,53 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
-
+  <script src="admin.js" defer></script>
 </head>
 <body>
- <div class="flex">
-    <div class="w-48 h-screen py-10 px-6 text-gray-900 bg-white rounded-lg text-left capitalize font-medium shadow-lg z-100">
-        <div class="relative py-2 sm:max-w-xl sm:mx-auto">
-            <a href="./admin.html" class="font-display max-w-sm text-xl  leading-tight">
-                <span class="link link-underline link-underline-black text-black"> Profil </span>
+
+    <div class="flex flex-container">
+   
+        <div class="w-48 h-screen py-10 px-6 transition-all duration-500 text-gray-900 bg-white rounded-b-lg tr  text-left capitalize font-medium shadow-lg z-100 sidebar " id="sidebar">
+         
+         <div class="elements">
+          <div class=" relative py-2 sm:max-w-xl sm:mx-auto">
+      
+                  <a href="./admin.html" class="font-display max-w-sm text-xl  leading-tight ">
+                      <span class="link link-underline link-underline-black text-black"> Profil </span>
+      
+                  </a>
+              </div>
+            <div class="relative py-2 sm:max-w-xl sm:mx-auto">
+              <a href="./termekek.html" class="font-display max-w-sm text-xl font-bold leading-tight">
+                  <span class="decoration-sky-500 text-black underline underline-offset-8 "> Termékek </span>
+              </a>
+          </div>
+          <div class="relative py-2 sm:max-w-xl sm:mx-auto">
+            <a href="./felhasznalok.html" class="font-display max-w-sm text-xl  leading-tight">
+                <span class="link link-underline link-underline-black text-black"> Felhasználók </span>
             </a>
         </div>
-      <div class="relative py-2 sm:max-w-xl sm:mx-auto">
-        <a href="./termekek.html" class="font-display max-w-sm text-xl  leading-tight">
-
-            <span class="decoration-sky-500 text-black underline underline-offset-8 font-bold"> Termékek </span>
-
-        </a>
-    </div>
-    <div class="relative py-2 sm:max-w-xl sm:mx-auto">
-      <a href="./felhasznalok.html" class="font-display max-w-sm text-xl  leading-tight">
-          <span class="link link-underline link-underline-black text-black"> Felhasználók </span>
-      </a>
-  </div>
-  <div class="relative py-2 sm:max-w-xl sm:mx-auto">
-    <a href="./rendelesek.html" class="font-display max-w-sm text-xl  leading-tight">
-        <span class="link link-underline link-underline-black text-black"> Rendelések </span>
-    </a>
-</div>
-<div class="absolute px-6 navbar-bottom"
->
-
-
-
-<div class="relative py-2  sm:max-w-xl sm:mx-auto">
-  <a href="../../index.html" class="font-display max-w-sm text-xl  leading-tight">
-      <span class="link link-underline link-underline-black text-red-600	 "> Kijelentkezés </span>
-  </a>
-</div>
-</div>
-    
+        <div class="relative py-2 sm:max-w-xl sm:mx-auto">
+          <a href="./rendelesek.html" class="font-display max-w-sm text-xl  leading-tight">
+              <span class="link link-underline link-underline-black text-black"> Rendelések </span>
+          </a>
       </div>
-   
-
+      <div class="absolute px-6 navbar-bottom"
+      >
+      
+      
+      <div class="relative py-2  sm:max-w-xl sm:mx-auto">
+        <a href="../../index.html" class="font-display max-w-sm text-xl  leading-tight ">
+            <span class="link link-underline link-underline-black text-red-600	 "> Kijelentkezés </span>
+        </a>
+      </div>
+      </div>
+         
+            </div></div>
+            <div class="w-[50px] h-[50px] bg-white" onclick="openSidebar()" id="sidebar2"> <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg></div>
+          
     <main>
-    
-
+        
 
 
     <div class="container fixed ml-[5%] w-[5000px] h-[900px] mt-[1%]" >
@@ -75,7 +77,7 @@
                     <span class="product-stock w-[220px] mx-[100px] text-xl">Készlet</span>
                 </div>
             </div>
-            <button class="edit-button">Szerkesztés</button>
+            <a href="termek_szerk.html"><button class="edit-button">Szerkesztés</button></a>
         </div>
     </div>
   

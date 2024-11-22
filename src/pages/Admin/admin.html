@@ -12,13 +12,12 @@
 <script src="admin.js" defer></script>
 </head>
 <body> 
+  
  <div class="flex flex-container">
-    
-  <div class="w-48 h-screen py-10 px-6 text-gray-900 bg-white rounded-lg text-left capitalize font-medium shadow-lg z-100 sidebar">
-    <i class="fas fa-times"
-    onclick="openSidebar()"
-  ></i>
    
+  <div class="w-48 h-screen py-10 px-6 transition-all duration-500 text-gray-900 bg-white rounded-b-lg tr  text-left capitalize font-medium shadow-lg z-100 sidebar " id="sidebar">
+   
+   <div class="elements">
     <div class=" relative py-2 sm:max-w-xl sm:mx-auto">
 
             <a href="./admin.html" class="font-display max-w-sm text-xl font-bold	 leading-tight ">
@@ -41,29 +40,28 @@
         <span class="link link-underline link-underline-black text-black"> Rendelések </span>
     </a>
 </div>
-<div class="absolute px-6 navbar-bottom"
+<div class="absolute px-6 navbar-bottom "
 >
 
 
 <div class="relative py-2  sm:max-w-xl sm:mx-auto">
-  <a href="../../index.html" class="font-display max-w-sm text-xl  leading-tight">
+  <a href="../../index.html" class="font-display max-w-sm text-xl  leading-tight ">
       <span class="link link-underline link-underline-black text-red-600	 "> Kijelentkezés </span>
   </a>
 </div>
 </div>
+   
+      </div></div>
+      <div class="w-[50px] h-[50px] bg-white" onclick="openSidebar()" id="sidebar2"> <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 15.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg></div>
     
-      </div>
-
     <main>
     
 
 
    
       <div class="flex-1 flex justify-center items-center object-center	
-       h-screen" style="
-       margin-left: 150px;
-   ">
-          <div class="bg-blue-100 rounded-lg shadow-lg p-6 flex space-x-8 w-[989px] h-[452px]">
+       h-screen mx-[150px]" >
+          <div class="bg-blue-100 rounded-lg shadow-lg p-6 flex space-x-8 w-[989px] h-[452px] md:w-auto ">
            
               <div class="w-1/2 h-full bg-gray-300 rounded-lg">
                   <img src="https://placehold.co/400x400" alt="Felhasználó profilképe" class="w-full h-full object-cover rounded-lg">
@@ -75,9 +73,7 @@
                   <p class="text-black text-lg">Felhasználó email</p>
                   <p class="text-black text-lg">Felhasználó tel.</p>
 
-                  <button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-4 hover:bg-blue-600">
-                      Szerkesztés
-                  </button>
+                  <a href="prof_szerk.html"><button class="bg-blue-500 text-white px-6 py-2 rounded-lg mt-4 hover:bg-blue-600">Szerkesztés</button></a>
               </div>
           </div>
       </div>

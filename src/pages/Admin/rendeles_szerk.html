@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felhasználó Szerkesztése</title>
+    <title>Rendelés módosítása</title>
     <style>
         :root {
             --btn: #4492F6;
@@ -24,13 +24,13 @@
         .card {
             display: grid;
             width: 362px;
-            height: 492px;
             background-color: rgba(255, 255, 255, 0.72);
             align-items: center;
             justify-items: center;
             border-radius: 10px;
-            gap: 30px;
+            gap: 20px;
             filter: drop-shadow(23px 22px 17.9px rgba(255, 255, 255, 0.2));
+            padding: 20px;
         }
         body {
             backdrop-filter: blur(4px);
@@ -83,15 +83,28 @@
             color: var(--input);
         }
         
+        .file-input {
+            width: 261px;
+            border: 1px solid var(--input);
+            padding: 10px;
+            border-radius: 10px;
+            background: var(--input);
+            color: #000;
+            font-family: Inter, sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="card">
-            <h1>FELHASZNÁLÓ SZERKESZTÉSE</h1>
-            <input type="text" name="username" class="input" placeholder="Felhasználó neve">
-            <input type="email" name="email" class="input" placeholder="Felhasználó email">
-            <input type="text" name="rank" class="input" placeholder="Felhasználó rangja">
+            <h1>RENDELÉS MÓDOSÍTÁSA</h1>
+            <input type="text" name="customer-name" class="input" placeholder="Megrendelő neve">
+            <input type="text" name="product-list" class="input" placeholder="Termékek listája">
+            <input type="text" name="total-price" class="input" placeholder="Összesített ár">
+            <input type="text" name="order-id" class="input" placeholder="Megrendelés ID">
+            <input type="text" name="status" class="input" placeholder="Státusz">
             <button type="submit">Módosítás</button>
         </div>
     </div>

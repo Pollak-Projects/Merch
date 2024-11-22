@@ -2,6 +2,7 @@
 body {
     background-image: url('images/bg.png');
    backdrop-filter: blur(3px);
+ 
 }
 
 .link-underline {
@@ -135,9 +136,48 @@ body {
         
     }
     .sidebar {
-        width: 350px!important;
-        height: 50px!important;
+        width: 100dvh!important;
+        height: 300px!important;
+        border-radius: 0px!important;
+
+    }
+    #closenav {
+        display: none;
+        
+    }
+    .navbar-bottom {
+bottom: auto;
     }
   }
 
+  
 
+
+  @media only screen and (max-width: 800px) {
+    .nav-mobile {
+        display: block;
+   }
+    nav {
+        width: 100%;
+        padding: 55px 0 15px;
+   }
+    nav ul {
+        display: none;
+   }
+    nav ul li {
+        float: none;
+   }
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+        background: #262626;
+   }
+    nav ul li ul li a {
+        padding-left: 30px;
+   }
+    .navbar-dropdown {
+        position: static;
+}}
+#sidebar, #sidebar2 {
+    transition: 0.5s;
+}
