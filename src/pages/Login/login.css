@@ -34,13 +34,11 @@ html{
     gap: 15px;
 }
 
-body {
 
-    background-image: url("imgs/bg.png");
+body {
     backdrop-filter: blur(4px);
     height: 100dvh;
     margin: 0;
-    backdrop-filter: blur(4px);
     height: 100dvh;
     margin: 0;
     display: flex;
@@ -140,6 +138,21 @@ input:hover::placeholder,  input:focus::placeholder{
     color: var(--input);
 }
 
+.logo_container{
+    margin: 0;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+}
+.img{
+    width: 50%;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
 
 @media (max-width: 600px) {
     body{
@@ -223,6 +236,12 @@ input:hover::placeholder,  input:focus::placeholder{
         background-color: var(--input);
         height: 41px;
         font-size: 28px;
+    }
+    .img{
+        width: 40%;
+    }
+    .logo_container{
+        margin-top: -50px;
     }
 
 }
