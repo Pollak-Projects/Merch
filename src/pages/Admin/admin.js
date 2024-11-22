@@ -16,3 +16,15 @@
   function closeNav() {
     document.getElementById("closenav").style.width = "0";
   }
+
+  let adatok = ["Ferenc", "ferenc@pollak.hu (kene az email arpi)", "+36301363356"]
+
+let nev = adatok[0]
+let email = adatok[1]
+let tel = adatok[2]
+
+document.getElementById("nev").innerHTML = nev;
+
+document.getElementById("email").innerHTML = email;
+
+document.getElementById("tel").innerHTML = tel;
