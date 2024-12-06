@@ -55,10 +55,10 @@
             <!-- Color Picker -->
             <div class="colors">
                 
-                <button class="color yellow"></button>
-                <button class="color red"></button>
-                <button class="color blue"></button>
-                <button class="color black"></button>
+                <button class="color yellow" onclick="ColorChanging(1)"></button>
+                <button class="color red" onclick="ColorChanging(2)"></button>
+                <button class="color blue" onclick="ColorChanging(3)"></button>
+                <button class="color black" onclick="ColorChanging(4)"></button>
 
             </div>
 
@@ -85,20 +85,20 @@
                 <div class="content-1">
                     <h1 class="polo-header">Pollák póló</h1>
 
-                    <div class="ertek">
-                        50.000 Ft
+                    <div class="ertek" id="PoloPrice">
+                        3000 Ft
                     </div>
 
                     <div class="darab">
-                        <div class="darabszam">
+                        <div class="darabszam" id="AmountOfPolo">
                             1
                         </div>
     
                         <div class="operatorok">
-                            <button class="hozzaadas">
+                            <button class="hozzaadas" onclick="AmountOfPoloController(1)">
                                 +
                             </button>
-                            <button class="kivonas">
+                            <button class="kivonas" onclick="AmountOfPoloController(-1)">
                                 -
                             </button>
                         </div>
@@ -106,15 +106,15 @@
                 </div>
 
                 <div class="content-2">
-                    <button class="size">S</button>
-                    <button class="size">M</button>
-                    <button class="size">L</button>
-                    <button class="size">XL</button>
-                    <button class="size">XXL</button>
+                    <button class="size" onclick="SizeChagning(1)">S</button>
+                    <button class="size" onclick="SizeChagning(2)">M</button>
+                    <button class="size" onclick="SizeChagning(3)">L</button>
+                    <button class="size" onclick="SizeChagning(4)">XL</button>
+                    <button class="size" onclick="SizeChagning(5)">XXL</button>
                 </div>
 
                 <div class="content-3">
-                    <button class="kosarba">
+                    <button class="kosarba" onclick="SendDataToKosar()">
                         <svg class="kosarba-svg" xmlns="http://www.w3.org/2000/svg" width="38" height="36" viewBox="0 0 38 36" fill="none">
                             <path d="M2.5 2.5H8.5L12.52 22.585C12.6572 23.2756 13.0329 23.8959 13.5813 24.3374C14.1298 24.779 14.816 25.0135 15.52 25H30.1C30.804 25.0135 31.4902 24.779 32.0387 24.3374C32.5871 23.8959 32.9628 23.2756 33.1 22.585L35.5 10H10M16 32.5C16 33.3284 15.3284 34 14.5 34C13.6716 34 13 33.3284 13 32.5C13 31.6716 13.6716 31 14.5 31C15.3284 31 16 31.6716 16 32.5ZM32.5 32.5C32.5 33.3284 31.8284 34 31 34C30.1716 34 29.5 33.3284 29.5 32.5C29.5 31.6716 30.1716 31 31 31C31.8284 31 32.5 31.6716 32.5 32.5Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>

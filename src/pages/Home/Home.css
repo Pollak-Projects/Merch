@@ -312,6 +312,10 @@ main {
     font-size: 20px;
     text-align: center;
     font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .operatorok button:hover{
@@ -332,6 +336,10 @@ main {
     font-size: 20px;
     text-align: center;
     font-weight: 900;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* masodik sor */
@@ -426,7 +434,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    justify-items: center;
     background-color: azure;
     width: 100%;
     padding-top:0.5vh;
@@ -434,11 +441,7 @@ main {
     font-size: 2.5vh;
     border-radius: 15px;
 }
-@media only screen and (min-width: 1200px){
-   .column-3 {
-        margin-top:-22vh;
-   } 
-}
+    
 .szallitas-header {
     font-size: 4vh;
     margin:0;
